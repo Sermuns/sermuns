@@ -1,3 +1,1 @@
-# sermuns.github.io
-
-Tryna publish a Wordpress site using Simply Static plugin.
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
