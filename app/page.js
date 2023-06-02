@@ -6,8 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
+          huh
         </p>
         <div>
           <a
@@ -47,7 +46,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Cocks<span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
