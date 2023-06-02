@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import styles from 'app/page.module.css'
 
 export default function Home() {
   return (
@@ -39,14 +39,14 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <a // href to /uh
+          href="/uh"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Cocks<span>-&gt;</span>
+            Uh<span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
@@ -64,13 +64,13 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="/about"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
+            About<span>-&gt;</span>
           </h2>
           <p>Explore the Next.js 13 playground.</p>
         </a>
