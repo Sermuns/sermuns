@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.njk
+title: Om mig
 eleventyNavigation:
   key: Om mig 
   order: 3
 ---
-# Om mig
+
+# {{title}}
 
 I am a person that writes stuff.

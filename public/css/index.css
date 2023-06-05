@@ -95,6 +95,9 @@ main {
 main :first-child {
 	margin-top: 0;
 }
+.center {
+text-align: center;
+}
 
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
