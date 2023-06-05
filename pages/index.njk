@@ -7,7 +7,7 @@ numberOfLatestPostsToShow: 3
 ---
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Senaste {{ latestPostsCount }} inlägg{% if latestPostsCount != 1 %}{% endif %}</h1>
+<h1>Senaste inlägg{% if latestPostsCount != 1 %}{% endif %}</h1>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
