@@ -1,6 +1,7 @@
 var DOMAIN = 'samake.se'
+
 module.exports = {
-	title: 'Eleventy Base Blog v8',
+	title: DOMAIN,
 	url: 'https://' + DOMAIN + '/',
 	language: 'sv',
 	description: 'Min hemsida, byggd med Eleventy',
