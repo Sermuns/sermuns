@@ -5,6 +5,16 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
+
+<p>Välkommen till min sida!</p>
+<p>Jag heter <a href="/about">Johan</a> och är en programmerare som bor i Stockholm.</p>
+<p>Den här sidan är en samling av mina tankar och projekt.</p>
+<p>Om du vill kontakta mig så kan du göra det via <a href="https://twitter.com/johanbrook">Twitter</a> eller <a href="asdasd">LinkedIn</a>.</p>
+<p>Om du vill se vad jag har gjort tidigare så kan du kolla på min <a href="/cv">CV</a>.</p>
+<p>Om du vill se vad jag har gjort senast så kan du kolla på min <a href="/blog">blog</a>.</p>
+<p>Om du vill se vad jag har gjort senast på GitHub så kan du kolla på min <a href="github.com/johanbrook">GitHub</a>.</p>
+<p>Om du vill se vad jag har gjort senast på Instagram så kan du kolla på min <a href="instagram.com/johanbrook">Instagram</a>.</p>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Senaste inlägg{% if latestPostsCount != 1 %}{% endif %}</h1>

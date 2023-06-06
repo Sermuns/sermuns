@@ -1,11 +1,9 @@
 ---
-layout: layouts/base
+layout: layouts/site
 title: Om mig
 eleventyNavigation:
   key: Om mig
   order: 99 
 ---
 
-# {{title}}
-
-I am a person that writes stuff.
+Jag är en kreativ person.
