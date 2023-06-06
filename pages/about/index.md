@@ -1,9 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base
 title: Om mig
 eleventyNavigation:
-  key: Om mig 
-  order: 3
+  key: Om mig
+  order: 99 
 ---
 
 # {{title}}

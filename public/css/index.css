@@ -31,7 +31,7 @@
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
-		--background-color: #15202b;
+		--background-color: #1a1f24;
 	}
 }
 
@@ -111,8 +111,10 @@ main :first-child {
 text-align: center;
 }
 
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
+header{
+	margin-top: 1rem;
+	border-bottom: 1px solid var(--color-gray-90);
+	border-top: 1px solid var(--color-gray-90);
 }
 header:after {
 	content: "";
@@ -166,24 +168,30 @@ header {
 	padding: 1em;
 }
 .home-link {
-	font-size: 1em; /* 16px /16 */
+	font-size: 2em; /* 16px /16 */
 	font-weight: 700;
-	margin-right: 2em;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
 
 /* Nav */
+nav{
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 .nav {
 	display: flex;
 	padding: 0;
 	margin: 0;
+	width: 100%;
 	list-style: none;
+	justify-content: space-between;
 }
 .nav-item {
-	display: inline-block;
-	margin-right: 1em;
+	text-align: center;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
