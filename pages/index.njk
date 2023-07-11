@@ -6,18 +6,13 @@ eleventyNavigation:
 numberOfLatestPostsToShow: 3
 ---
 
-<p>Välkommen till min sida!</p>
-<p>Jag heter <a href="/about">Johan</a> och är en programmerare som bor i Stockholm.</p>
-<p>Den här sidan är en samling av mina tankar och projekt.</p>
-<p>Om du vill kontakta mig så kan du göra det via <a href="https://twitter.com/johanbrook">Twitter</a> eller <a href="asdasd">LinkedIn</a>.</p>
-<p>Om du vill se vad jag har gjort tidigare så kan du kolla på min <a href="/cv">CV</a>.</p>
-<p>Om du vill se vad jag har gjort senast så kan du kolla på min <a href="/blog">blog</a>.</p>
-<p>Om du vill se vad jag har gjort senast på GitHub så kan du kolla på min <a href="github.com/johanbrook">GitHub</a>.</p>
-<p>Om du vill se vad jag har gjort senast på Instagram så kan du kolla på min <a href="instagram.com/johanbrook">Instagram</a>.</p>
+<h2>Välkommen till min sida!</h2>
+<p>Här lägger jag upp lite vad jag vill! Om du läser runt kanske du får en bättre bild om vem jag är, eller kanske lär dig något nytt om något område jag intresserar mig för!</p>
+
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Senaste inlägg{% if latestPostsCount != 1 %}{% endif %}</h1>
+<h2>Senaste inlägg{% if latestPostsCount != 1 %}{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -25,7 +20,7 @@ numberOfLatestPostsToShow: 3
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
-<p>{{ morePosts }} fler inlägg{% if morePosts != 1 %}{% endif %} finns i <a href="/blog">blog.</a></p>
+<p>{{ morePosts }} fler inlägg{% if morePosts != 1 %}{% endif %} finns i <a href="/blog">bloggen.</a></p>
 {% endif %}
 
 {# List every content page in the project #}
