@@ -252,7 +252,7 @@ nav{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-style: italic;
 }
 .postlist-item > .post-tag {
