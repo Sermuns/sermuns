@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Om mig
   order: 99 
 ---
+{% image "./samuel.jpg", "Jag, i Budapest!" %}
 
 Hej! Mitt namn är Samuel Åkesson.
   

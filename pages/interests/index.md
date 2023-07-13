@@ -1,8 +1,8 @@
 ---
 layout: layouts/site
-title: Matematik 
+title: Intressen
 eleventyNavigation:
-  key: Matematik
+  key: Intressen
   order: 3
 ---
 hej
