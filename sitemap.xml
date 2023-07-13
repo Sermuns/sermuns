@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://samake.se/blog/</loc>
+		<lastmod>2023-06-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/</loc>
+		<lastmod>2023-06-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/tags/</loc>
+		<lastmod>2023-06-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/tags/linkopings-universitet/</loc>
+		<lastmod>2023-06-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/tags/om-livet/</loc>
+		<lastmod>2023-06-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/about/</loc>
+		<lastmod>2023-07-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/interests/</loc>
+		<lastmod>2023-07-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/blog/f%C3%B6rsta%20%C3%A5r%20p%C3%A5%20datateknik/</loc>
+		<lastmod>2023-07-12</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://samake.se/interests/math/</loc>
+		<lastmod>2023-07-13</lastmod>
+	</url>
+</urlset>
