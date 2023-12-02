@@ -14,6 +14,7 @@ Här lägger jag upp lite vad jag vill! Om du läser runt kanske du får en bät
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 
 # Senaste inlägg
+Kanske någonting låter intressant?
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}

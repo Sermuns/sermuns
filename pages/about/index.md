@@ -5,8 +5,6 @@ eleventyNavigation:
   key: Om mig
   order: 99 
 ---
-{% image "./samuel.jpg", "Jag, i Budapest!" %}
-
 Hej! Mitt namn är Samuel Åkesson.
   
 Jag är student på Linköpings universitet, där läser jag till civilingenjör inom datateknik.
