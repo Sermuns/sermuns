@@ -1,18 +1,19 @@
 ---
 layout: layouts/home
+permalink: /
 eleventyNavigation:
   key: Hem 
   order: 1
 numberOfLatestPostsToShow: 3
 ---
 
-<h2>Välkommen till min sida!</h2>
-<p>Här lägger jag upp lite vad jag vill! Om du läser runt kanske du får en bättre bild om vem jag är, eller kanske lär dig något nytt om något område jag intresserar mig för!</p>
-
+# Välkommen till min sida!
+Här lägger jag upp lite vad jag vill! Om du läser runt kanske du får en bättre bild om vem jag är, eller kanske lär dig något nytt om något område jag intresserar mig för!
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h2>Senaste inlägg{% if latestPostsCount != 1 %}{% endif %}</h2>
+
+# Senaste inlägg
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
