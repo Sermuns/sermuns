@@ -1,4 +1,4 @@
-var DOMAIN = 'samake.se'
+const DOMAIN = 'samake.se'
 
 module.exports = {
 	title: DOMAIN,
