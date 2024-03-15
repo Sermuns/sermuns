@@ -1,4 +1,4 @@
 {{ $columns := .Get 0 }}
-<div class="columns" style="display: grid; grid-template-columns: repeat({{$columns}}, auto);">
+<div class="columns" style="grid-template-columns: repeat({{$columns}}, auto);">
     {{ .Inner }}
 </div>

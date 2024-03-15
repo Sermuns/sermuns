@@ -1,6 +1,6 @@
 $accent-color: yellow;
 $internal-link-color: #ffff62;
-$external-link-color: #6262ff;
+$external-link-color: #7474ff;
 $background-color: #191919;
 $code-background-color: #2a2a2a;
 $dark-color: #151515;
@@ -26,7 +26,7 @@ html {
 }
 
 #main-content {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 p {
@@ -73,7 +73,6 @@ a {
   color: $internal-link-color;
   text-decoration: none;
   border: 1px solid transparent;
-
   &:hover {
     border-color: $internal-link-color;
   }
@@ -95,22 +94,20 @@ footer {
 }
 
 .grid {
+  font-size: 1.5rem;
   width: fit-content;
   margin: auto;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: auto auto;
+  gap: 2rem;
+  grid-template-columns: repeat(2, auto);
   align-items: center;
-
-  & > :nth-child(2n) {
-    justify-self: start;
-  }
-  & > :nth-child(2n + 1) {
-    justify-self: end;
-  }
+  text-align: center;
 }
 
 .columns {
+  display: grid;
   gap: 1rem;
   align-items: center;
+  justify-items: center;
+  padding: 1rem;
 }
