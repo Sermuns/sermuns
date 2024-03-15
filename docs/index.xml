@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on </title>
+    <title></title>
     <link>//localhost:3000/</link>
-    <description>Recent content in Home on </description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sv-se</language>
     <lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
@@ -16,11 +16,25 @@
       <description>Hi, quick update from me. I just want to let everyone know that I like roaring.</description>
     </item>
     <item>
-      <title>About</title>
+      <title></title>
       <link>//localhost:3000/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:3000/about/</guid>
       <description>Hehe I&amp;rsquo;m a little about page. I&amp;rsquo;m not very interesting, but I&amp;rsquo;m here.&#xA;Here is some javascript code that I like:&#xA;function add(a, b) { return a + b; } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:3000/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:3000/links/</guid>
+      <description>[Undervisningsnummer](http://un.samake.se)</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:3000/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:3000/projects/</guid>
+      <description>Projekt Här är en lista på några av de projekt jag (jobbar|har jobbat) på.&#xA;Ledigt (2024-nu) Efter att ha skapat, och finslipat undervisningsnummer blev jag sugen på ännu ett projekt. Eftersom jag hade blivit lite mer bekväm med web-scraping så ville jag skapa en hemsida som visar vilka lokaler som är lediga just nu på Linköpings universitet.&#xA;Undervisningsnummer (2023-nu) En hemsida för att se antal passerade föreläsningar, lektioner m.m. som har passerat i en kurs på Linköpings universitet.</description>
     </item>
   </channel>
 </rss>
