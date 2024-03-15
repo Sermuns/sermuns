@@ -1,0 +1,7 @@
+languageCode = 'sv-se'
+
+[params]
+name = 'Samuel Åkesson'
+domain = 'samake.se'
+
+publishDir = 'docs'

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on </title>
+    <link>//localhost:3000/posts/</link>
+    <description>Recent content in Blog on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>sv-se</language>
+    <lastBuildDate>Sun, 03 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:3000/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I like to roar</title>
+      <link>//localhost:3000/posts/2024-03-15-hehe/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:3000/posts/2024-03-15-hehe/</guid>
+      <description>Hi, quick update from me. I just want to let everyone know that I like roaring.</description>
+    </item>
+  </channel>
+</rss>
