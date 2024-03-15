@@ -1,0 +1,9 @@
+{{ $imageName := .Get 0 }}
+{{ $width := .Get 1 }}
+{{ $image := resources.Get (printf "images/%s" $imageName) }}
+{{ if $image }}
+    {{ $optimizedImage := $image.Resize (printf "%dx webp" (default $image.Width $width))}}
+    <img src="{{ $optimizedImage.RelPermalink }}" alt="{{ .Get 2 }}" />
+{{ else }}
+    <p>Error: Image `{{ $imageName }}` not found.</p>
+{{ end }}

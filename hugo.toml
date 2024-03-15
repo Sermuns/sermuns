@@ -4,3 +4,19 @@ publishDir = 'docs'
 [params]
 name = 'Samuel Åkesson'
 domain = 'samake.se'
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'native'
+    tabWidth = 4
