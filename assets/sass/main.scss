@@ -58,8 +58,11 @@ body {
   }
   code {
     background-color: $code-background-color;
-    font-family: "JetBrains Mono", monospace;
   }
+}
+
+code{
+  font-family: "JetBrains Mono", monospace;
 }
 
 nav {
@@ -84,6 +87,11 @@ a[href^="http"] {
   &:hover {
     border-color: $external-link-color;
   }
+}
+
+a[target="_blank"]::after {
+  content: "↗";
+  font-size: small;
 }
 
 footer {
