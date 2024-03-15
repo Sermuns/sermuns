@@ -1,6 +1,15 @@
 {{ $imageName := .Get 0 }}
 {{ $width := .Get 1 }}
-{{ $image := resources.Get (printf "images/%s" $imageName) }}
+{{ $imageExtensions := slice ".png" ".jpg" ".jpeg" ".webp" }}
+{{ $image := "" }}
+{{ range $imageExtensions }}
+    {{ if not $image }}
+        {{ $tempImage := resources.Get (printf "images/%s%s" $imageName .) }}
+        {{ if $tempImage }}
+            {{ $image = $tempImage }}
+        {{ end }}
+    {{ end }}
+{{ end }}
 {{ if $image }}
     {{ $optimizedImage := $image.Resize (printf "%dx webp q90" (default $image.Width $width))}}
     <img src="{{ $optimizedImage.RelPermalink }}" alt="{{ .Get 2 }}" />
