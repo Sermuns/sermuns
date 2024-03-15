@@ -17,17 +17,10 @@
     </item>
     <item>
       <title></title>
-      <link>//localhost:3000/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:3000/about/</guid>
-      <description>Hehe I&amp;rsquo;m a little about page. I&amp;rsquo;m not very interesting, but I&amp;rsquo;m here.&#xA;Here is some javascript code that I like:&#xA;function add(a, b) { return a + b; } </description>
-    </item>
-    <item>
-      <title></title>
       <link>//localhost:3000/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:3000/links/</guid>
-      <description>[Undervisningsnummer](http://un.samake.se)</description>
+      <description> Undervisningsnummer:&#xA;un.samake.se Ledigt:&#xA;ledigt.samake.se </description>
     </item>
     <item>
       <title></title>

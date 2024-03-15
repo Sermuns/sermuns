@@ -1,6 +1,8 @@
 $accent-color: yellow;
-$link-color: darken($accent-color, 10%);
+$internal-link-color: #ffff62;
+$external-link-color: #6262ff;
 $background-color: #191919;
+$code-background-color: #2a2a2a;
 $dark-color: #151515;
 $darker-color: #111;
 $font-color: #fff;
@@ -24,10 +26,10 @@ html {
 }
 
 #main-content {
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
-p{
+p {
   line-height: 1.5rem;
 }
 
@@ -38,6 +40,8 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh;
 
   margin: 0 auto;
   @media (min-width: 1000px) {
@@ -53,6 +57,7 @@ body {
     padding: 0.5rem;
   }
   code {
+    background-color: $code-background-color;
     font-family: "JetBrains Mono", monospace;
   }
 }
@@ -65,10 +70,20 @@ nav {
 }
 
 a {
-  color: $link-color;
+  color: $internal-link-color;
   text-decoration: none;
+  border: 1px solid transparent;
+
   &:hover {
-    text-decoration: underline;
+    border-color: $internal-link-color;
+  }
+}
+
+// external links
+a[href^="http"] {
+  color: $external-link-color;
+  &:hover {
+    border-color: $external-link-color;
   }
 }
 
@@ -76,5 +91,26 @@ footer {
   background-color: $darker-color;
   padding: 0.5rem;
   text-align: center;
-  font-style: italic;
+  margin-top: auto;
+}
+
+.grid {
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto;
+  align-items: center;
+
+  & > :nth-child(2n) {
+    justify-self: start;
+  }
+  & > :nth-child(2n + 1) {
+    justify-self: end;
+  }
+}
+
+.columns {
+  gap: 1rem;
+  align-items: center;
 }
