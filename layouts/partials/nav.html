@@ -1,8 +1,12 @@
 <a href="/" style="margin: 1rem auto; font-size:2rem;">
     {{ .Site.Params.domain}}
 </a>
-<input type="checkbox" name="" id="">
-<nav>
+<nav role="navigation">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
     {{ range .Site.Menus.main }}
     <a href="{{ .URL }}" {{ if eq .Page.RelPermalink .URL }}style="text-decoration: underline;" {{ end }}>
         {{ .Name }}

@@ -39,22 +39,19 @@ body {
   font-family: "Inter", sans-serif;
   color: $font-color;
   background-color: $dark-color;
-
   display: flex;
   flex-direction: column;
-
   min-height: 100vh;
-
   margin: 0 auto;
   width: 1000px;
 
-  // mobile responsive
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin: 0;
   }
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -71,18 +68,86 @@ code {
   font-family: "JetBrains Mono", monospace;
 }
 
+// external links
+a[href^="http"] {
+  color: $external-link-color;
+  &:hover {
+    border-color: $external-link-color;
+  }
+}
+a[target="_blank"]::after {
+  content: " ⤴";
+  font-size: smaller;
+}
+
+footer {
+  background-color: $darker-color;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: smaller;
+}
+
+.grid {
+  font-size: 1.5rem;
+  width: fit-content;
+}
+
 nav {
   padding: 0.5rem;
   background: $darker-color;
   display: flex;
   justify-content: space-evenly;
+  align-items: stretch;
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  span {
+    width: 3rem;
+    height: 4px;
+    align-self: flex-end;
+    background: white;
+    margin: 0.3rem 0;
+  }
+
+  // hide for desktop
+  input,
+  span {
+    display: none;
+  }
 
   @media (max-width: $mobile-width) {
-    input[type="checkbox"]:not(:checked) + a{
+    // reveal for mobile
+    input,
+    span {
+      display: block;
+    }
+
+    // closed
+    input:not(:checked) ~ a {
       display: none;
     }
+
+    a {
+      padding: 0.2rem;
+      border: 1px solid rgba($internal-link-color, 0.3);
+      margin: 0.5rem 0;
+    }
     flex-direction: column;
-    gap: 1rem;
+    text-align: right;
     font-size: 1.5rem;
   }
 }
@@ -92,7 +157,7 @@ a {
   text-decoration: none;
   border: 1px solid transparent;
   &:hover {
-    border-color: $internal-link-color;
+    border-color: rgba($internal-link-color, 0.6);
   }
 }
 
