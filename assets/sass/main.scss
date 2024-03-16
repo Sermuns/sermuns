@@ -31,7 +31,6 @@ html {
 }
 
 p {
-  line-height: 1.5rem;
 }
 
 body {
@@ -51,6 +50,10 @@ body {
   @media (max-width: 1000px) {
     width: 100%;
   }
+}
+
+img{
+  max-width: 100%;
 }
 
 .highlight {
