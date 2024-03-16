@@ -14,7 +14,8 @@ Jag har alltid velat ha en hemsida där jag kan samla allt jag har gjort. Det to
 
 ## [Ledigt](http://ledigt.samake.se) (2024-nu)
 
-Efter att ha skapat, och finslipat [undervisningsnummer](#undervisningsnummer-2023-nu) blev jag sugen på ännu ett projekt. Eftersom jag hade blivit lite mer bekväm med web-scraping så ville jag skapa en hemsida som visar vilka lokaler som är lediga _just nu_ på Linköpings universitet.
+Efter att ha skapat, och finslipat [undervisningsnummer](#undervisningsnummerhttpunsamakese-2023-nu
+) blev jag sugen på ännu ett projekt. Eftersom jag hade blivit lite mer bekväm med web-scraping så ville jag skapa en hemsida som visar vilka lokaler som är lediga _just nu_ på Linköpings universitet.
 
 {{< img ledigt 600 >}}
 
