@@ -55,6 +55,7 @@ img {
   max-width: 100%;
 }
 
+// code listings
 .highlight {
   pre {
     padding: 0.5rem;
@@ -68,29 +69,12 @@ code {
   font-family: "JetBrains Mono", monospace;
 }
 
-// external links
-a[href^="http"] {
-  color: $external-link-color;
-  &:hover {
-    border-color: $external-link-color;
-  }
-}
-a[target="_blank"]::after {
-  content: " ⤴";
-  font-size: smaller;
-}
-
 footer {
   background-color: $darker-color;
   padding: 0.5rem;
   text-align: center;
   margin-top: auto;
   font-size: smaller;
-}
-
-.grid {
-  font-size: 1.5rem;
-  width: fit-content;
 }
 
 nav {
@@ -130,6 +114,10 @@ nav {
   }
 
   @media (max-width: $mobile-width) {
+    flex-direction: column;
+    text-align: right;
+    font-size: 1.5rem;
+
     // reveal for mobile
     input,
     span {
@@ -146,13 +134,12 @@ nav {
       border: 1px solid rgba($internal-link-color, 0.3);
       margin: 0.5rem 0;
     }
-    flex-direction: column;
-    text-align: right;
-    font-size: 1.5rem;
   }
 }
 
+// assume all links are internal
 a {
+  white-space: nowrap;
   color: $internal-link-color;
   text-decoration: none;
   border: 1px solid transparent;
@@ -168,7 +155,6 @@ a[href^="http"] {
     border-color: $external-link-color;
   }
 }
-
 a[target="_blank"]::after {
   content: " ⤴";
   font-size: smaller;
@@ -182,21 +168,13 @@ footer {
   font-size: smaller;
 }
 
-.grid {
-  font-size: 1.5rem;
-  width: fit-content;
-  margin: auto;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(2, auto);
-  align-items: center;
-  text-align: center;
-}
-
 .columns {
   display: grid;
   gap: 1rem;
-  align-items: center;
   justify-items: center;
   padding: 1rem;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: auto !important;
+  }
 }
