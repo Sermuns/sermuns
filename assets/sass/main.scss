@@ -90,8 +90,8 @@ a[href^="http"] {
 }
 
 a[target="_blank"]::after {
-  content: "↗";
-  font-size: small;
+  content: " ⤴";
+  font-size: smaller;
 }
 
 footer {

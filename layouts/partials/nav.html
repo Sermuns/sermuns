@@ -2,8 +2,10 @@
     {{ .Site.Params.domain}}
 </a>
 <nav>
-    <a href="/posts">Inlägg</a>
-    <a href="/projects">Projekt</a>
-    <a href="/links">Länkar</a>
-    <a href="/about">Om</a>
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" {{ if .Page.IsMenuCurrent "main" . }}style="text-decoration: underline;" {{ end }}>
+        {{ .Name }}
+    </a>
+    {{ end }}
+    </ul>
 </nav>
