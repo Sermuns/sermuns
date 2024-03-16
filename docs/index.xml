@@ -6,7 +6,6 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sv-se</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projekt</title>
@@ -20,7 +19,7 @@
       <link>/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/links/</guid>
-      <description> Länkar till andra sidor jag har skapat!&#xA;un.samake.se ledigt.samake.se </description>
+      <description> Länkar till andra sidor jag har skapat!&#xA;un.samake.se Se antal passerade föreläsningar, lektioner m.m. i en kurs på LiU. ledigt.samake.se Se lediga lokaler just nu på LiU. </description>
     </item>
   </channel>
 </rss>
