@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:3000/</loc>
+    <loc>/</loc>
     <lastmod>2022-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:3000/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:3000/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>//localhost:3000/links/</loc>
+    <loc>/links/</loc>
   </url><url>
-    <loc>//localhost:3000/projects/</loc>
+    <loc>/projects/</loc>
   </url><url>
-    <loc>//localhost:3000/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:3000/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
