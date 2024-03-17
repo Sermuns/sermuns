@@ -26,6 +26,7 @@ $mobile-width: 1000px;
 p {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -51,13 +52,10 @@ html {
   h6 {
     margin-top: 1.5rem;
   }
-  p {
+  > p {
     margin-bottom: 1.5rem;
+    line-height: 1.5rem;
   }
-}
-
-p {
-  line-height: 1.5rem;
 }
 
 body {
@@ -140,8 +138,7 @@ nav {
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    text-align: right;
-    font-size: 1.5rem;
+    text-align: center;
 
     // reveal for mobile
     input,
@@ -155,9 +152,9 @@ nav {
     }
 
     a {
-      padding: 0.2rem;
+      padding: 0.5rem;
       border: 1px solid rgba($internal-link-color, 0.3);
-      margin: 0.5rem 0;
+      margin: 0.3rem 0;
     }
   }
 }
@@ -199,7 +196,30 @@ footer {
   justify-items: center;
   padding: 1rem;
 
+  text-align: center;
+
   @media (max-width: $mobile-width) {
-    grid-template-columns: auto !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    span{
+      flex-grow: 1;
+      margin: 0 2rem;
+      background: linear-gradient(to right, $internal-link-color, $internal-link-color) no-repeat center/100% 1px;
+    }
+    p {
+      width: auto;
+    }
   }
 }
