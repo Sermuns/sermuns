@@ -1,7 +1,7 @@
 ---
 title: 'Mitt första år på datateknik'
 date: 2023-07-12
-tags: ['studentliv']
+tags: ['student']
 ---
 
 Här är en överblick som jag skriver nu under min ledighet sommaren 2023,

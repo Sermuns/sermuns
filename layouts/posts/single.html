@@ -1,5 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Params.Title }}</h1>
-<p>{{ .Date.Format "January 2, 2006" }}</p>
+<label> {{ .Date.Format "2006.01.02" }} </label>
+<div id="tags">
+    {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+</div>
 {{ .Content }}
 {{ end }}

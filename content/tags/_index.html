@@ -1,0 +1,6 @@
+<div id="grid">
+    {{ range $key, $value := .Site.Taxonomies.tags }}
+        <a href="{{ `tags/` | relLangURL }}{{ $key | urlize }}">{{ $key }}</a>
+    {{ end }}
+    heh
+</div>

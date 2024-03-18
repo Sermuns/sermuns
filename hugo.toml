@@ -2,7 +2,6 @@ languageCode = 'sv-se'
 publishDir = 'docs'
 defaultContentLanguage = "sv"
 
-
 [params]
 name = 'Samuel Åkesson'
 domain = 'samake.se'
