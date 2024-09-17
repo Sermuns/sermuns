@@ -1,0 +1,239 @@
+$accent-color: yellow;
+$internal-link-color: #ffff62;
+$external-link-color: #7474ff;
+$code-background-color: #2a2a2a;
+$dark-color: lighten(#151515, 1%);
+$darker-color: darken($dark-color, 3%);
+$font-color: #fff;
+$background-color: lighten($dark-color, 2%);
+$body-width: 1200px;
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// reset stuff
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  background-color: $background-color;
+}
+
+main {
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.5rem;
+  }
+  > p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $font-color;
+  background-color: $dark-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: $body-width;
+
+  @media (max-width: $body-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// code listings
+.highlight {
+  pre {
+    padding: 0.5rem;
+  }
+  code {
+    background-color: $code-background-color;
+  }
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+footer {
+  background-color: $darker-color;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: smaller;
+}
+
+nav {
+  padding: 0.5rem;
+  background: $darker-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  span {
+    width: 3rem;
+    height: 4px;
+    align-self: flex-end;
+    background: white;
+    margin: 0.3rem 0;
+  }
+
+  // hide for desktop
+  input,
+  span {
+    display: none;
+  }
+
+  @media (max-width: $body-width) {
+    flex-direction: column;
+    text-align: center;
+
+    // reveal for mobile
+    input,
+    span {
+      display: block;
+    }
+
+    // closed
+    input:not(:checked) ~ a {
+      display: none;
+    }
+
+    a {
+      padding: 0.5rem;
+      border: 1px solid rgba($internal-link-color, 0.3);
+      margin: 0.3rem 0;
+    }
+  }
+}
+
+// assume all links are internal
+a {
+  white-space: nowrap;
+  color: $internal-link-color;
+  text-decoration: none;
+  border: 1px solid transparent;
+  &:hover {
+    border-color: rgba($internal-link-color, 0.6);
+  }
+}
+
+// external links
+a[href^="http"] {
+  color: $external-link-color;
+  &:hover {
+    border-color: $external-link-color;
+  }
+}
+a[target="_blank"]::after {
+  content: " ⤴";
+  font-size: smaller;
+}
+
+footer {
+  background-color: $darker-color;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: smaller;
+}
+
+.columns {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+
+  text-align: center;
+
+  @media (max-width: $body-width) {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  a {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgba($internal-link-color, 0.3);
+    &:hover {
+      border-color: rgba($internal-link-color, 0.6);
+    }
+  }
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    span{
+      flex-grow: 1;
+      margin: 0 2rem;
+      background: linear-gradient(to right, $internal-link-color, $internal-link-color) no-repeat center/100% 1px;
+    }
+    p {
+      width: auto;
+    }
+  }
+}

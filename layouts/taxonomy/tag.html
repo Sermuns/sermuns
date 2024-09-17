@@ -1,9 +1,0 @@
-{{ define "main"}}
-<h1>Taggen "{{ .Page.Title}}"</h1>
-<div id="list">
-    {{ range .Data.Pages }}
-    <a href="{{.RelPermalink}}">{{ .Title }}</a>
-    {{ end }}
-</div>
-</ul>
-{{ end }}

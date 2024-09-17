@@ -1,7 +1,0 @@
-{
-    "files.exclude": {
-        "docs/": true,
-        "resources/": true,
-        ".hugo_build.lock": true,
-    }
-}

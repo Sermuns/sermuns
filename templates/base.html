@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <a href="/" style="margin: 1rem auto; font-size:2rem;">
+        {{ config.title }}
+    </a>
+    <nav role="navigation">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+
+        <a href="/posts/">
+            Inlägg
+        </a>
+
+        <a href="/projects/">
+            Projekt
+        </a>
+
+        <a href="/links/">
+            Länkar
+        </a>
+
+    </nav>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+</body>
+
+</html>
