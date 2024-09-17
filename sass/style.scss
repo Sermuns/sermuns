@@ -1,7 +1,7 @@
 $accent-color: yellow;
 $internal-link-color: #ffff62;
 $external-link-color: #7474ff;
-$code-background-color: #2a2a2a;
+$code-background-color: #2b2b2b;
 $dark-color: lighten(#151515, 1%);
 $darker-color: darken($dark-color, 3%);
 $font-color: #fff;
@@ -17,7 +17,14 @@ $body-width: 1200px;
 
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("woff2");
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("/fonts/CaskaydiaMonoNerdFont-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,6 +45,8 @@ h6 {
 
 html {
   background-color: $background-color;
+  font-family: "Cascadia Code", monospace;
+  font-size: 16px;
 }
 
 main {
@@ -59,7 +68,6 @@ main {
 }
 
 body {
-  font-family: "Inter", sans-serif;
   color: $font-color;
   background-color: $dark-color;
   display: flex;
@@ -89,7 +97,8 @@ img {
 }
 
 code {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Cascadia Code", monospace;
+  background-color: $code-background-color;
 }
 
 footer {
