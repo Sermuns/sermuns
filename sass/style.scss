@@ -1,33 +1,12 @@
 $accent-color: yellow;
-$internal-link-color: #ffff62;
-$external-link-color: #7474ff;
+$internal-link-color: #7474ff;
+$external-link-color: #ffff62;
 $code-background-color: #2b2b2b;
 $dark-color: lighten(#151515, 1%);
 $darker-color: darken($dark-color, 3%);
 $font-color: #fff;
 $background-color: lighten($dark-color, 2%);
-$body-width: 1200px;
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CaskaydiaMonoNerdFont-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+$body-width: 60em;
 
 // reset stuff
 p {
@@ -45,7 +24,7 @@ h6 {
 
 html {
   background-color: $background-color;
-  font-family: "Cascadia Code", monospace;
+  font-family: "MonaspiceKr NFM", monospace;
   font-size: 16px;
 }
 
@@ -212,7 +191,7 @@ footer {
   }
 }
 
-#tags{
+#tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -236,10 +215,15 @@ footer {
     justify-content: space-between;
     width: 100%;
     white-space: nowrap;
-    span{
+    span {
       flex-grow: 1;
       margin: 0 2rem;
-      background: linear-gradient(to right, $internal-link-color, $internal-link-color) no-repeat center/100% 1px;
+      background: linear-gradient(
+          to right,
+          $internal-link-color,
+          $internal-link-color
+        )
+        no-repeat center/100% 1px;
     }
     p {
       width: auto;
