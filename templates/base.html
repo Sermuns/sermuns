@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>{% block title %}{{ config.title }}{% endblock %}</title>
-    <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="{{ get_url(path='/style.css') }}" />
 </head>
 
 <body>
-    <a href="/" style="margin: 1rem auto; font-size:2rem;">
+        <a href="{{get_url(path='/') }}" style="margin: 1rem auto; font-size:2rem;">
         {{ config.title }}
     </a>
     <nav role="navigation">
@@ -18,9 +18,9 @@
         <span></span>
         <span></span>
 
-        <a href="/blog">Blogg</a>
-        <a href="/projects">Projekt</a>
-        <a href="/about">Om</a>
+    <a href="{{ get_url(path='/blog') }}">Blogg</a>
+    <a href="{{ get_url(path='/projects') }}">Projekt</a>
+    <a href="{{ get_url(path='/about') }}">Om</a>
 
     </nav>
     <main>

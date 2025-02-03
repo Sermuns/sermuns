@@ -1,9 +1,8 @@
-base_url = "https://samake.se"
 title = "samake.se"
 description = ""
 compile_sass = true
-output-dir = "build"
 build_search_index = false
+base_url = "."
 
 [markdown]
 highlight_code = false
