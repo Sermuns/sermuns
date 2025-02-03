@@ -1,4 +1,4 @@
 **/*.lock
 /resources/_gen/
 dev/
-build/
+public/
